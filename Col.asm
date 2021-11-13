@@ -4,20 +4,10 @@
 ; Author: Dusan Strakl
 ; Date: December 2020
 ; Compiler: CC65
-; Build using:	cl65 -t cx16 Col.asm -o COL.PRG
 ; Build using:	cl65 -t cx16 Col.asm -C cx16-asm.cfg -o COL.PRG
-
-;.org $080D
-;.segment "STARTUP"
-;.segment "INIT"
-;.segment "ONCE"
-;.segment "CODE"
 
 .org $8000
 .segment "CODE"
-
-* = $8000
-.cpu "4510"
 
 ; VERA Registers
 VERA_LOW	    = $9F20
